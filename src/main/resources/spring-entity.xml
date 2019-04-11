@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <bean name="userInfo" class="com.yh.pojo.UserInfo">
+        <property name="username" value="mangseng"></property>
+        <property name="password" value="741"></property>
+    </bean>
+
+    <bean name="jks" class="com.yh.pojo.UserInfo">
+        <property name="name" value="金克斯"></property>
+        <property name="username" value="jinkesi"></property>
+        <property name="password" value="852"></property>
+        <property name="email" value="jinkesi@qq.com"></property>
+        <property name="status" value="1"></property>
+    </bean>
+
+    <bean name="jm" class="com.yh.pojo.UserInfo">
+        <property name="userId" value="1"></property>
+        <property name="name" value="剑魔"></property>
+        <property name="username" value="jianmo"></property>
+        <property name="password" value="453"></property>
+        <property name="email" value="jianmo@qq.com"></property>
+        <property name="status" value="1"></property>
+    </bean>
+</beans>
