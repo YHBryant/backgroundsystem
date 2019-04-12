@@ -11,8 +11,8 @@
     <!-- 2、配置静态资源处理 -->
     <mvc:default-servlet-handler />
 
-    <bean name="multipartResolver"
-          class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+    <bean name="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <property name="maxUploadSize" value="2097152"/>
         <property name="defaultEncoding" value="UTF-8"></property>
     </bean>
 
@@ -33,11 +33,13 @@
         <property name="prefix" value="/"></property>
         <property name="suffix" value=".html"></property>
     </bean>
-    <mvc:interceptors>
-    <!--配置登录拦截器-->
-    <mvc:interceptor>
-    <mvc:mapping path="/*.html"/>
-    <bean class="com.yh.interceptor.MyInterceptor"/>
-    </mvc:interceptor>
-    </mvc:interceptors>
+
+
+    <!--<mvc:interceptors>-->
+    <!--&lt;!&ndash;配置登录拦截器&ndash;&gt;-->
+    <!--<mvc:interceptor>-->
+    <!--<mvc:mapping path="/*.html"/>-->
+    <!--<bean class="com.yh.interceptor.MyInterceptor"/>-->
+    <!--</mvc:interceptor>-->
+    <!--</mvc:interceptors>-->
 </beans>
